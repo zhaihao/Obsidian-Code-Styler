@@ -60,7 +60,7 @@ body {
 	overflow: hidden !important;
 	min-height: unset;
 	padding: 0px !important;
-	border-radius: var(--border-radius) !important;
+	border-radius: 8px !important;
 	background: var(--code-styler-codeblock-background-colour) !important;
 }
 .code-styler pre.code-styler-pre[class*='language-'] {
@@ -496,7 +496,6 @@ pre.code-styler-pre.code-styler-folded .code-styler-header-container::after,
 .code-styler-header-container:hover::after {
 	scale: 1;
 }
-body pre.code-styler-pre:has(.code-styler-header-container-hidden) button.copy-code-button,
 body .markdown-source-view :not(pre.code-styler-pre) > .code-styler-header-container-hidden + .HyperMD-codeblock-begin span.code-block-flair {
 	top: calc(0.5 * var(--font-text-size) * 0.875 * var(--line-height-normal)) !important;
 	--copy-code-header-right-margin: 12px;
@@ -504,38 +503,29 @@ body .markdown-source-view :not(pre.code-styler-pre) > .code-styler-header-conta
 body .markdown-source-view :not(pre.code-styler-pre) > .code-styler-header-container.hidden + .HyperMD-codeblock-begin {
 	overflow: hidden;
 }
-pre.code-styler-pre button.copy-code-button {
-	top: max(calc(0.5 * var(--container-height) * 1),calc(0.5 * var(--container-min-height) * 1)) !important;
-	bottom: unset !important;
-	transform: translateY(-50%);
-}
-pre.code-styler-pre button.copy-code-button,
-pre.code-styler-pre button.run-code-button, /*? Execute Code Plugin Compatibility */
+
+
 .markdown-source-view.mod-cm6 .HyperMD-codeblock.code-styler-line span.code-block-flair {
 	margin-right: calc(var(--copy-code-header-right-margin) - var(--dent-difference));
 	clip-path: var(--polygon-in);
 	will-change: margin-right, clip-path;
 }
-pre.code-styler-pre button.copy-code-button:not(:active),
-pre.code-styler-pre button.run-code-button:not(:active), /*? Execute Code Plugin Compatibility */
+
 .markdown-source-view.mod-cm6 .HyperMD-codeblock.code-styler-line span.code-block-flair:not(:active) {
 	animation: indent var(--duration-button);
 }
-pre.code-styler-pre button.copy-code-button:hover,
-pre.code-styler-pre button.run-code-button:hover, /*? Execute Code Plugin Compatibility */
+
 .markdown-source-view.mod-cm6 .HyperMD-codeblock.code-styler-line span.code-block-flair:hover{
 	margin-right: var(--copy-code-header-right-margin);
 	animation: outdent var(--duration-button);
 	background-color: transparent;
 	clip-path: var(--polygon-out);
 }
-pre.code-styler-pre button.copy-code-button:active,
-pre.code-styler-pre button.run-code-button:active, /*? Execute Code Plugin Compatibility */
+
 .markdown-source-view.mod-cm6 .HyperMD-codeblock.code-styler-line span.code-block-flair:active {
 	scale: 0.95;
 	transition: scale var(--duration-button) cubic-bezier(0.4, 0.14, 0.3, 1);
 }
-pre.code-styler-pre button.copy-code-button::before,
 .markdown-source-view.mod-cm6 .HyperMD-codeblock.code-styler-line span.code-block-flair::before {
 	display: inline-block;
 	width: 14px;

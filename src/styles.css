@@ -6,3 +6,75 @@
 @import url("./css/pickr.css");
 @import url("./css/settings.css");
 @import url("./css/pluginCompatibility.css");
+
+
+.markdown-rendered button.copy-code-button {
+	width: 50px;
+	padding: 4px 0 !important;
+	margin-top: 6px !important;
+	margin-right: 40px;
+	/*height: 1.8rem;*/
+	background-color: #263237;
+	box-shadow: 0 0 4px 0 #b5b5b5ff;
+	color: #b5b5b5 !important;
+}
+
+.markdown-rendered button.run-code-button {
+	width: 50px;
+	height: unset !important;
+	padding: 4px 0 !important;
+	margin-right: 40px;
+	margin-bottom: 8px !important;
+	background-color: #263237;
+	box-shadow: 0 0 4px 0 #b5b5b5ff;
+	color: #b5b5b5 !important;
+	/*height: 1.8rem;*/
+}
+.markdown-rendered pre.code-styler-pre button.clear-button-disabled {
+	display: none !important;
+}
+.markdown-rendered button.clear-button {
+	right: 6em;
+	left: auto;
+	width: 50px;
+	height: unset !important;
+	padding: 4px 0 !important;
+	margin-right: 28px;
+	margin-bottom: 8px !important;
+	background-color: #263237;
+	box-shadow: 0 0 8px 0 #b5b5b5ff;
+	color: #b5b5b5 !important;
+	/*height: 1.8rem;*/
+}
+
+.markdown-rendered div.code-styler-pre-parent code {
+	line-height: 2 !important;
+}
+
+.code-styler.code-styler-style-inline .cm-s-obsidian span.cm-inline-code,
+.code-styler.code-styler-style-inline .markdown-rendered code.code-styler-inline:not([parameters]) {
+	padding: 0.1em 0.25em !important;
+	border-radius: 4px !important;
+	margin: 0 !important;
+	background-color: #f9f2f4 !important;
+	color: #fa243c !important;
+	font-feature-settings: "cv02", "ss01", "ss02", "ss03", "ss04", "ss05";
+	white-space: nowrap;
+}
+.code-styler.code-styler-style-inline .cm-s-obsidian span.cm-inline-code:has(*),
+.code-styler.code-styler-style-inline .markdown-rendered code.code-styler-inline[parameters] {
+	padding: 0.1em 0.25em !important;
+	border-radius: 4px !important;
+	margin: 0 !important;
+	background-color: #f9f2f4 !important;
+	font-feature-settings: "cv02", "ss01", "ss02", "ss03", "ss04", "ss05";
+	white-space: nowrap;
+}
+
+span.cm-inline-code .cm-def {
+	color: #5c5c5c
+}
+
+.code-styler-icon {
+	box-shadow: 0 0 8px 0 #b5b5b5ff;
+}

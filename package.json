@@ -5,7 +5,7 @@
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
-		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production && cp manifest.json main.js styles.css /Users/zhaihao/Documents/ORISON/.obsidian/plugins/code-styler",
 		"update": "ncu -u && npm install && node manual-update.mjs",
 		"lint": "eslint --fix --max-warnings=0 src && stylelint --fix --max-warnings=0 src/styles.css src/css",
 		"test": "vitest",
